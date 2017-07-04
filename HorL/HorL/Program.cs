@@ -9,7 +9,6 @@ namespace HorL
 {
     class Program
     {
-        static bool gameMode = false;
         static int points = 0;
         static bool answer;
         static bool guess;
@@ -30,8 +29,6 @@ namespace HorL
                 if (enteredName.Length > 0)
                 {
                     Console.WriteLine(UserName(enteredName));
-                    //SetPostion();
-                    gameMode = true;
                     DrawCards();
                 }
                 else
